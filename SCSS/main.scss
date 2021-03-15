@@ -1,0 +1,37 @@
+@import './components/mixins';
+
+html {
+    font-size: 16px;
+    
+    @include responsive(tab-land) {
+        font-size: 88%;
+    }
+    @include responsive(tab-port) {
+        font-size: 75%;
+    }
+    @include responsive(phone) {
+        font-size: 62.5%;
+
+    }
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // font-size: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: linen;
+}
+
+@import './components/nav';
+@import './components/intro';
+@import './components/about';
+
+
+@import './components/mediaQuerys'
+
+
+

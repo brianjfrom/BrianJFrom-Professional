@@ -1,0 +1,28 @@
+nav {
+    @include responsive(phone) {
+        display: flex;
+        grid-template-columns: none;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+
+        .block-middle-right,
+        .block-right {
+            display: none;
+        }
+        .block-middle-left {
+            text-align: right;
+        }
+        .block-left {
+            border: none;
+            text-align: left;
+            }
+        }
+    }
+.about {
+    @include responsive(phone) {
+        width: 100%;
+        margin: 0;
+      }
+}
+
