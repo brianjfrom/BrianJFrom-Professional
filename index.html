@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Just for Fun</title>
 </head>
+
 <body>
     <nav>
         <div class="block-left">
@@ -18,24 +20,210 @@
             <p class="city">Salt Lake City, UT</p>
         </div>
         <div class="block-middle-right">
-            <a href="#"><p class="edu">Education</p></a>
-            <a href="#"><p class="employ">Employment</p></a>
+            <a href="#edu">
+                <p class="edus">Education</p>
+            </a>
+            <a href="#">
+                <p class="employ">Employment</p>
+            </a>
         </div>
         <div class="block-right">
-            <a href="#"><p>Contact</p></a>   
-            <a href="#about"><p>About</p></a>
+            <a href="#">
+                <p>Contact</p>
+            </a>
+            <a href="#about">
+                <p>About</p>
+            </a>
         </div>
     </nav>
-    <div class="intro">
+    <div class="intro" id="intro">
         <div class="box1">
-            <h1 class="lab">Laboratorian</h1>
+            <!-- <h1 class="lab">Laboratorian</h1> -->
         </div>
-        <button class="btn1">More Info</button>
+        <button class="btn1" onclick="introFade()">More Info</button>
         <div class="arrow-up"></div>
     </div>
     <section class="about" id="about">
-        <p><span class="about-span1">20+ years experience:  </span>Brian has been working in the laboratory since 1999, when he graduated from the US Air Force’s Medical Laboratory School.  He was honored for his service as laboratorian while in the Air Force.  After seperating from the military Brain has spent the remaining years as a qualified lab technician in hospitals around the country.  Brian has for last 16 years worked for MountainStar’s (HCA) flagship hospital in the intermountain west region. Having worked as a laboratory generalist for his career he has learned and adapted to new technology in the laboratory field.
+        <p><span class="about-span1">20+ years experience: </span>Brian has been working in the laboratory since 1999,
+            when he graduated from the US Air Force’s Medical Laboratory School. He was honored for his service as
+            laboratorian while in the Air Force. After seperating from the military Brian has spent the remaining years
+            as a qualified lab technician in hospitals around the country. Brian has for last 16 years worked for
+            MountainStar’s (HCA) flagship hospital in the intermountain west region. Having worked as a laboratory
+            generalist for his career he has learned and adapted to new technology in the laboratory field.
         </p>
     </section>
+    <section class="education" id="edu">
+        <div class="edu">
+            <h2>Education:</h2>
+            <div class="edu-loc-box">
+                <p><span class="edu-header">Community College of the Air Force,</span> Omaha, Nebraska</p>
+                <p>Certificate of Completion in Medical Laboratory Sciences</p>
+                <p>Graduation Date: June 1999</p>
+            </div>
+            <div class="edu-data">
+                <div class="edu-data-header">
+                    <p>Phase I Training:</p>
+                </div>
+                <div class="edu-data-info">
+                    <p>Procedural education in Chemistry, Hematology, Urinalysis, Immunology, Microbiology,
+                        Parasitology, and Virology</p>
+                </div>
+                <div class="edu-data-header">
+                    <p>Phase II Training:</p>
+                </div>
+                <div class="edu-data-info">
+                    <p>Practical education in automated chemistry analyzers, manual chemistry techniques, automated
+                        hematology analyzers, blood slide preparation and staining, peripheral slide evaluation,
+                        automated urinalysis analyzers, manual urinalysis techniques, automated immunology analyzers,
+                        manual immunology techniques, automated microbiology techniques, media plate preparation, slide
+                        preparation and gram staining, microbiology slide evaluation, and manual microbiology
+                        techniques. Introduction to Mechanical troubleshooting and repair of automated laboratory
+                        analyzers.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="edu-loc-box">
+                <p><span class="edu-header">Texas Culinary Academy,</span> Austin, Texas</p>
+                <p>Le Cordon Bleu Culinary Arts</p>
+                <p>April 2005</p>
+            </div>
+            <br>
+            <div class="edu-loc-box">
+                <p><span class="edu-header">Highland High School,</span> Salt Lake City, UT</p>
+                <p>Graduation Date: June 1995</p>
+            </div>
+        </div>
+        <div class="procedures">
+            <h3>Procedures:</h3>
+            <ul>
+                <li>  Experience in blood banking procedures, Cross matching, typing, screening and antibody detection.</li>
+                <li>Experience in microbiology to include inoculating, identification, coagulation, and automated panel setup</li>
+                <li>Experience in Molecular Biology testing (Bio-fire, Cepheid, and Verigene)
+                </li>
+                <li>Skillful in immunology procedures including rapid testing and latex agglutination</li>
+                <li>Proficient in manual cellular counts, and staining in hematology</li>
+                <li>Proficient in Gram Staining and Bacterial identification</li>
+            </ul>
+        </div>
+    </section>
+    <section class="employment">
+        <h2>Employment:</h2>
+        <div class="employ">
+            <div class="employ_left">
+                <p class="header">St. Marks Hospital</p>
+                <p><i>Medical Laboratory Technician</i></p>
+            </div>
+            <div class="employ_right">
+                <p>Salt Lake City, UT</p>
+                <p>April 2006 - Current</p>
+            </div>
+        </div>
+        <div class="employ_info">
+            <ul>
+                <li>Laboratory Generalist: Responsible for analyzer QC and calibrations. Organized and performed a
+                    program for daily, weekly and monthly analyzer maintenance. Independently performs automated and
+                    manual testing for emergency, hospital and reference lab patients. Knowledgeable and proficient in
+                    analyzer troubleshooting and repairs. Performs microbiology set ups and gram staining for body
+                    fluids and tissues. Knowledgeable in gram stain microscopy examinations. Proficient in manual
+                    differential testing, and urine microscopy. Experienced specimen processor of laboratory specimens.
+                </li>
+                <li>Other responsibilities: Instrumental in integration of Epic/Beaker laboratory information system,
+                    during beta-site installation. Responsible for implantation of laboratory specimen tracking systems.
+                    Key operator for Siemens Vista instrumentation maintenance.
+                </li>
+            </ul>
+        </div>
+        <div class="employ">
+            <div class="employ_left">
+                <p class="header">Willford Hall Medical Center </p>
+                <p><i>Medical Laboratory Technician</i></p>
+            </div>
+            <div class="employ_right">
+                <p>San Antonio, TX</p>
+                <p>February 2003 - February 2004</p>
+            </div>
+        </div>
+        <div class="employ_info">
+            <ul>
+                <li> Laboratory Generalist: Performed automated and manual testing for emergency, hospital and reference
+                    lab patients. Performed microbiology set ups and gram staining for body fluids and tissues.
+                    Knowledgeable in gram stain microscopy examinations. Proficient in manual differential testing, and
+                    urine microscopy
+                </li>
+                <li>Technician: Responsible for specimen processing in a large military reference laboratory. Prepared
+                    and shipped laboratory samples to other testing facilities.
+                </li>
+                <li>Phlebotomist: Performed venous and capillary blood collections on infant, pediatric, adult and
+                    geriatric patients for largest military/VA clinic in state.
+                </li>
+            </ul>
+        </div>
+        <div class="employ">
+            <div class="employ_left">
+                <p class="header">United States Air Force</p>
+                <p><i>Medical Laboratory Technician</i></p>
+            </div>
+            <div class="employ_right">
+                <p>Clovis, NM</p>
+                <p>March 1998 - October 2002</p>
+            </div>
+        </div>
+        <div class="employ_info">
+            <ul>
+                <li> Supervisor:
+                    <ul class="ul2">
+                        <li>Shipping, receiving, and inventory manager
+                        </li>
+                        <li> Cost and supply custodian for equipment and inventory
+                        </li>
+                        <li>Computer systems manager for operations
+                        </li>
+                    </ul>
+                </li>
+                <li>Generalist for Chemistry, Microbiology, Urinalysis, Hematology and Coagulation, and serology
+                </li>
+            </ul>
+        </div>
+        <div class="employ">
+            <div class="employ_left">
+                <p class="header">Plains Regional Medical Center </p>
+                <p><i>Medical Laboratory Technician</i></p>
+            </div>
+            <div class="employ_right">
+                <p>Clovis, NM</p>
+                <p>March 2002 – October 2002</p>
+            </div>
+        </div>
+        <div class="employ_info">
+            <ul>
+                <li> Body Fluid preparation and examination in chemistry, hematology, urinalysis, immunology, and
+                    microbiology
+                </li>
+                <li> Blood Banking technician
+                </li>
+            </ul>
+        </div>
+        <div class="employ">
+            <div class="employ_left">
+                <p class="header">Westin, La Cantera Resort</p>
+                <p><i>Line Chef</i></p>
+            </div>
+            <div class="employ_right">
+                <p>San Antonio, TX</p>
+                <p>April 2005 - March 2006</p>
+            </div>
+        </div>
+        <div class="employ_info">
+            <ul>
+                <li> Casual Dining: Sauté, Grill, Garde Manger, Omelet, and Prep Stations
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <script src="./script.js"></script>
 </body>
+
 </html>

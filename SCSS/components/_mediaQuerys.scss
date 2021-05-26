@@ -25,4 +25,21 @@ nav {
         margin: 0;
       }
 }
+.education {
+    @include responsive(phone) {
+        flex-direction: column;
+
+        .edu {
+            flex-basis: 0;
+        }
+        .procedures {
+            flex-basis: 0;
+        }
+    }
+}
+.employment {
+    @include responsive(phone) {
+        margin: 0;
+    }
+}
 

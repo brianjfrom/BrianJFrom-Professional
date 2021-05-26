@@ -1,0 +1,48 @@
+.education {
+    display: flex;
+    
+    .edu {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 70%;
+    }
+    .procedures {
+        flex-basis: 30%;
+        padding: 1rem 0 1rem 1rem;
+        font-size: 1.2rem;
+
+        li {
+            padding-bottom: 1rem;
+            padding-right: 1rem;
+        }
+    }
+}
+
+.edu {
+    line-height: .5;
+    padding: 1rem 0 1rem 1rem;
+    font-size: 1.2rem;
+    background-color: $color3;
+    color: whitesmoke;
+    // margin-right: 30%;
+    margin-top: .5rem;
+
+    .edu-loc-box {
+        padding-left: 1rem;
+
+        .edu-header {
+            font-weight: bold;
+        }
+    }
+    .edu-data {
+        padding: .2rem 3rem;
+
+        &-header {
+            font-weight: bold;
+        }
+        &-info {
+            line-height: 1.2;
+            
+        }
+    }
+}

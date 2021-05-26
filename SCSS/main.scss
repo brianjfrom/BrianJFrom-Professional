@@ -14,7 +14,10 @@ html {
 
     }
 }
-
+html {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     margin: 0;
@@ -26,12 +29,13 @@ body {
     background-color: linen;
 }
 
+
 @import './components/nav';
 @import './components/intro';
 @import './components/about';
+@import './components/education';
+@import './components/employment';
 
 
-@import './components/mediaQuerys'
-
-
+@import './components/mediaQuerys';
 

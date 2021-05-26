@@ -1,0 +1,43 @@
+.employment {
+    line-height: 0.5;
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin-left: 25%;
+    background-color: $color4;
+    color: white;
+    margin-top: .5rem;
+
+    .employ {
+        padding-left: 1rem;
+        display: flex;
+        justify-content: space-between;
+
+        &_left {
+            .header {
+                font-weight: bold;
+            }
+        }
+
+        &_right {
+            padding-right: 2rem;
+
+        }
+    }
+    .employ_info {
+        line-height: 1.2;
+        padding-left: 3rem;
+        padding-right: 1.5rem;
+         
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            padding-bottom: 0.5rem;
+        }
+
+        .ul2 {
+            padding-left: 2rem;
+        }
+    }
+}
