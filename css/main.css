@@ -16,7 +16,7 @@ html {
 
 @media screen and (max-width: 700px) {
   html {
-    font-size: 62.5%;
+    font-size: 75%;
   }
 }
 
@@ -229,13 +229,30 @@ nav .block-right p {
 }
 
 .employment {
+  margin-top: .5rem;
+  display: flex;
+}
+
+.employment-other {
+  flex-basis: 40%;
+}
+
+.employment-other h2 {
+  padding-left: 1rem;
+}
+
+.employment-other li {
+  font-size: 1.2rem;
+  padding: .5rem 1rem;
+}
+
+.employment-info {
+  flex-basis: 60%;
+  background-color: #434A58;
+  color: white;
   line-height: 0.5;
   padding: 1rem;
   font-size: 1.2rem;
-  margin-left: 25%;
-  background-color: #434A58;
-  color: white;
-  margin-top: .5rem;
 }
 
 .employment .employ {
@@ -269,6 +286,66 @@ nav .block-right p {
 
 .employment .employ_info .ul2 {
   padding-left: 2rem;
+}
+
+.instrumentation {
+  width: 85%;
+  margin: 0 auto;
+  background-color: #434A58;
+  color: burlywood;
+}
+
+.instrumentation h2 {
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  margin-top: .5rem;
+}
+
+.instrumentation .analyzers {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  text-align: center;
+  font-size: 1.3rem;
+  grid-gap: .5rem;
+  padding: 0 0.5rem 1rem;
+}
+
+.instrumentation .analyzers p {
+  margin: 0;
+  border: 2px outset lightgray;
+  padding: 0.5rem;
+}
+
+.contact {
+  background-color: #D3D8E0;
+}
+
+.contact-info {
+  display: flex;
+  padding: 0 1rem;
+  justify-content: space-evenly;
+  font-size: 1.4rem;
+}
+
+.contact-info p:nth-last-of-type(3) {
+  margin-left: auto;
+}
+
+.contact-info p:nth-last-of-type(3) {
+  margin-right: auto;
+}
+
+.contact-info p {
+  padding: 1rem;
+}
+
+.contact-info img {
+  height: 5rem;
+}
+
+.contact-info .insta {
+  height: 3rem;
+  padding-top: 1rem;
 }
 
 @media screen and (max-width: 700px) {
@@ -305,6 +382,7 @@ nav .block-right p {
   }
   .education .edu {
     flex-basis: 0;
+    line-height: 1;
   }
   .education .procedures {
     flex-basis: 0;
@@ -313,6 +391,30 @@ nav .block-right p {
 
 @media screen and (max-width: 700px) {
   .employment {
+    flex-direction: column-reverse;
+    line-height: 1;
+  }
+  .employment-info {
+    line-height: 1;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .instrumentation {
     margin: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contact-info {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+  }
+  .contact-info p {
+    padding: 0;
   }
 }

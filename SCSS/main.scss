@@ -10,7 +10,8 @@ html {
         font-size: 75%;
     }
     @include responsive(phone) {
-        font-size: 62.5%;
+        font-size: 75%;
+        ;
 
     }
 }
@@ -23,7 +24,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // font-size: 10px;
     text-decoration: none;
     color: black;
     background-color: linen;
@@ -35,7 +35,39 @@ body {
 @import './components/about';
 @import './components/education';
 @import './components/employment';
+@import './components/instrumentation';
 
+.contact {
+    background-color: $color1;
+
+    &-info {
+        display: flex;
+        padding: 0 1rem;
+        justify-content: space-evenly;
+        font-size: 1.4rem;
+
+        & p:nth-last-of-type(3) {
+            margin-left: auto;
+        }
+
+        & p:nth-last-of-type(3) {
+            margin-right: auto;
+        }
+
+        p {
+            padding: 1rem;
+        }
+
+        img {
+            height: 5rem;
+        }
+
+        .insta {
+            height: 3rem;
+            padding-top: 1rem;
+        }
+    }
+}
 
 @import './components/mediaQuerys';
 

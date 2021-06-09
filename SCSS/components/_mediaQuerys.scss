@@ -31,6 +31,8 @@ nav {
 
         .edu {
             flex-basis: 0;
+            line-height: 1;
+            // font-size: 1.2rem;
         }
         .procedures {
             flex-basis: 0;
@@ -39,7 +41,34 @@ nav {
 }
 .employment {
     @include responsive(phone) {
-        margin: 0;
+        flex-direction: column-reverse;
+        line-height: 1;
+
+        &-info {
+            line-height: 1;
+        }
     }
 }
 
+.instrumentation {
+    @include responsive(phone) {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+.contact {
+    @include responsive(phone) {
+        &-info {
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            text-align: center;
+
+            p {
+                padding: 0;
+            }
+        }
+    }
+}
