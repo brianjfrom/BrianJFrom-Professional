@@ -2,23 +2,62 @@ nav {
     @include responsive(phone) {
         display: flex;
         grid-template-columns: none;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         padding: 0;
 
-        .block-middle-right,
-        .block-right {
-            display: none;
-        }
         .block-middle-left {
             text-align: right;
         }
         .block-left {
             border: none;
             text-align: left;
+
+            .title1 {
+                text-align: left;
+            }
+        }
+        .icon {
+            display: block;
+        }
+    }
+}
+
+.topnav {
+    @include responsive(phone) {
+        .block-middle-right,
+        .block-right {
+            display: none;
+        }
+    }
+}
+
+.topnav.dropdown {
+    @include responsive(phone) {
+        .block-middle-right,
+        .block-right {
+            display: block;
+            
+            .edus,
+            .employ,
+            p  {
+                font-size: 2.5rem;
+                color: darkslateblue;
+                
             }
         }
     }
+}
+
+.intro {
+    @include responsive(phone) {
+        background-position: center center;
+    }
+    @include responsive(tab-port) {
+        background-position: center center;
+    }
+}
+
 .about {
     @include responsive(phone) {
         width: 100%;

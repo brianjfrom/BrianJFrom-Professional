@@ -44,6 +44,7 @@ nav {
   line-height: .5ch;
   opacity: 0.9;
   background-color: lightsteelblue;
+  position: relative;
 }
 
 nav .block-left {
@@ -112,8 +113,16 @@ nav .block-right p {
   color: initial;
 }
 
+nav .icon {
+  font-size: 4rem;
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
+  display: none;
+}
+
 .intro {
-  background-image: url(https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+  background-image: url(https://images.unsplash.com/photo-1599727277707-b429a4994c15?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80);
   height: 95vh;
   background-size: cover;
   display: flex;
@@ -352,13 +361,9 @@ nav .block-right p {
   nav {
     display: flex;
     grid-template-columns: none;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     padding: 0;
-  }
-  nav .block-middle-right,
-  nav .block-right {
-    display: none;
   }
   nav .block-middle-left {
     text-align: right;
@@ -366,6 +371,47 @@ nav .block-right p {
   nav .block-left {
     border: none;
     text-align: left;
+  }
+  nav .block-left .title1 {
+    text-align: left;
+  }
+  nav .icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .topnav .block-middle-right,
+  .topnav .block-right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .topnav.dropdown .block-middle-right,
+  .topnav.dropdown .block-right {
+    display: block;
+  }
+  .topnav.dropdown .block-middle-right .edus,
+  .topnav.dropdown .block-middle-right .employ,
+  .topnav.dropdown .block-middle-right p,
+  .topnav.dropdown .block-right .edus,
+  .topnav.dropdown .block-right .employ,
+  .topnav.dropdown .block-right p {
+    font-size: 2.5rem;
+    color: darkslateblue;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .intro {
+    background-position: center center;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .intro {
+    background-position: center center;
   }
 }
 

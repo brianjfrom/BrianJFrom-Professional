@@ -7,6 +7,7 @@ nav {
   line-height: .5ch;
   opacity: 0.9;
   background-color: lightsteelblue;
+  position: relative;
 
   .block-left {
       border-right: 1px solid green;
@@ -68,6 +69,13 @@ nav {
           font-size: 1.2rem;
           color: initial;
       }
+  }
+  .icon {
+      font-size: 4rem;
+      position: absolute;
+      top: 3rem;
+      right: 1rem;
+      display: none;
   }
 
 }
