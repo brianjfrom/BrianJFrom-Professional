@@ -29,25 +29,28 @@ nav {
         .block-right {
             display: none;
         }
-    }
-}
-
-.topnav.dropdown {
-    @include responsive(phone) {
-        .block-middle-right,
-        .block-right {
-            display: block;
+        .responsive-header {
+            display: flex;
+            transform: scale(0, 1);
+            transform-origin: right;
+            transition: transform 500ms ease-in-out;
+            opacity: 0;
+            transition: opacity 400ms ease-in-out;
             
-            .edus,
-            .employ,
-            p  {
-                font-size: 2.5rem;
-                color: darkslateblue;
-                
-            }
         }
     }
 }
+@include responsive(phone) {
+    .topnav.dropdown {
+
+        .responsive-header {
+            transform: scale(1, 1);
+            opacity: 1;
+            
+        }
+    }
+}
+
 
 .intro {
     @include responsive(phone) {

@@ -117,8 +117,25 @@ nav .icon {
   font-size: 4rem;
   position: absolute;
   top: 3rem;
-  right: 1rem;
+  right: 2.5rem;
   display: none;
+}
+
+.responsive-header {
+  display: none;
+  flex-direction: column;
+  margin-left: 50%;
+  width: 50%;
+  font-size: 2rem;
+  position: absolute;
+  top: 12vh;
+  background-color: lightsteelblue;
+}
+
+.responsive-header p {
+  padding: 1rem 7rem 1rem 1rem;
+  overflow: hidden;
+  color: rgba(10, 0, 100, 0.8);
 }
 
 .intro {
@@ -163,7 +180,7 @@ nav .icon {
 }
 
 .introPressed {
-  animation: fadeOut 3s linear 1;
+  animation: fadeOut 2.25s linear 1;
   overflow: hidden;
   height: 0;
 }
@@ -385,21 +402,20 @@ nav .icon {
   .topnav .block-right {
     display: none;
   }
+  .topnav .responsive-header {
+    display: flex;
+    transform: scale(0, 1);
+    transform-origin: right;
+    transition: transform 500ms ease-in-out;
+    opacity: 0;
+    transition: opacity 400ms ease-in-out;
+  }
 }
 
 @media screen and (max-width: 700px) {
-  .topnav.dropdown .block-middle-right,
-  .topnav.dropdown .block-right {
-    display: block;
-  }
-  .topnav.dropdown .block-middle-right .edus,
-  .topnav.dropdown .block-middle-right .employ,
-  .topnav.dropdown .block-middle-right p,
-  .topnav.dropdown .block-right .edus,
-  .topnav.dropdown .block-right .employ,
-  .topnav.dropdown .block-right p {
-    font-size: 2.5rem;
-    color: darkslateblue;
+  .topnav.dropdown .responsive-header {
+    transform: scale(1, 1);
+    opacity: 1;
   }
 }
 
